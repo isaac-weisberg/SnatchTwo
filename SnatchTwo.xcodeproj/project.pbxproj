@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A00005B920BE658900A513D5 /* Get.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00005B820BE658900A513D5 /* Get.swift */; };
 		A00005BB20BE669700A513D5 /* ErrornousObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00005BA20BE669700A513D5 /* ErrornousObservable.swift */; };
+		A00005BD20BE67B400A513D5 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00005BC20BE67B400A513D5 /* Post.swift */; };
 		A036A5C920BE527000508F2B /* Snatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A036A5AD20BE51D500508F2B /* Snatch.swift */; };
 		A036A5CA20BE527100508F2B /* Snatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A036A5AD20BE51D500508F2B /* Snatch.swift */; };
 		A036A5CE20BE53B800508F2B /* SnatchBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A036A5CC20BE53B800508F2B /* SnatchBase.framework */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		A00005B820BE658900A513D5 /* Get.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Get.swift; sourceTree = "<group>"; };
 		A00005BA20BE669700A513D5 /* ErrornousObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrornousObservable.swift; sourceTree = "<group>"; };
+		A00005BC20BE67B400A513D5 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		A036A5A920BE4E4B00508F2B /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		A036A5AA20BE4E6A00508F2B /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		A036A5AD20BE51D500508F2B /* Snatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snatch.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				A036A5AD20BE51D500508F2B /* Snatch.swift */,
 				A00005B820BE658900A513D5 /* Get.swift */,
 				A00005BA20BE669700A513D5 /* ErrornousObservable.swift */,
+				A00005BC20BE67B400A513D5 /* Post.swift */,
 			);
 			path = SnatchTwo;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 				A00005B920BE658900A513D5 /* Get.swift in Sources */,
 				A00005BB20BE669700A513D5 /* ErrornousObservable.swift in Sources */,
 				A036A5C920BE527000508F2B /* Snatch.swift in Sources */,
+				A00005BD20BE67B400A513D5 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,7 +483,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.github.isaac-weisberg.SnatchTwo";
@@ -558,7 +562,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.github.isaac-weisberg.SnatchTwo";
 				PRODUCT_NAME = SnatchTwo;
