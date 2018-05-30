@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		A036A5C920BE527000508F2B /* Snatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A036A5AD20BE51D500508F2B /* Snatch.swift */; };
 		A036A5CA20BE527100508F2B /* Snatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A036A5AD20BE51D500508F2B /* Snatch.swift */; };
+		A036A5CE20BE53B800508F2B /* SnatchBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A036A5CC20BE53B800508F2B /* SnatchBase.framework */; };
+		A036A5CF20BE53B800508F2B /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A036A5CD20BE53B800508F2B /* RxSwift.framework */; };
+		A036A5D220BE53C600508F2B /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A036A5D020BE53C600508F2B /* RxSwift.framework */; };
+		A036A5D320BE53C600508F2B /* SnatchBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A036A5D120BE53C600508F2B /* SnatchBase.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		A036A5B720BE51FD00508F2B /* iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = iOS.plist; sourceTree = "<group>"; };
 		A036A5C120BE521D00508F2B /* SnatchTwo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnatchTwo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A036A5C420BE521D00508F2B /* macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = macOS.plist; sourceTree = "<group>"; };
+		A036A5CC20BE53B800508F2B /* SnatchBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnatchBase.framework; path = Carthage/Build/iOS/SnatchBase.framework; sourceTree = "<group>"; };
+		A036A5CD20BE53B800508F2B /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		A036A5D020BE53C600508F2B /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/Mac/RxSwift.framework; sourceTree = "<group>"; };
+		A036A5D120BE53C600508F2B /* SnatchBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnatchBase.framework; path = Carthage/Build/Mac/SnatchBase.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +34,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A036A5CE20BE53B800508F2B /* SnatchBase.framework in Frameworks */,
+				A036A5CF20BE53B800508F2B /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,6 +43,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A036A5D220BE53C600508F2B /* RxSwift.framework in Frameworks */,
+				A036A5D320BE53C600508F2B /* SnatchBase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +58,7 @@
 				A036A5A920BE4E4B00508F2B /* .gitignore */,
 				A036A5AB20BE513F00508F2B /* Sources */,
 				A036A5B420BE51FD00508F2B /* Products */,
+				A036A5CB20BE53B800508F2B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +87,17 @@
 				A036A5C120BE521D00508F2B /* SnatchTwo.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A036A5CB20BE53B800508F2B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A036A5D020BE53C600508F2B /* RxSwift.framework */,
+				A036A5D120BE53C600508F2B /* SnatchBase.framework */,
+				A036A5CD20BE53B800508F2B /* RxSwift.framework */,
+				A036A5CC20BE53B800508F2B /* SnatchBase.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +282,10 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -338,6 +366,10 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -413,6 +445,10 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				FRAMEWORK_VERSION = A;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -494,6 +530,10 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				FRAMEWORK_VERSION = A;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
