@@ -22,14 +22,13 @@ public extension Snatch {
     }
 }
 
-internal func createHandler(_ observer: AnyObserver<Result>) -> Snatch.DataTaskCallback {
-    return { data, response, error in
+internal func createHandler(_ observer: AnyObserver<Result>) -> Snatch.SnatchTaskCallback {
+    return { result, error in
         if let error = error {
             observer.onError(error)
         }
-        if let response = response as? HTTPURLResponse {
-            let packedResponse = Result(from: response, data)
-            observer.onNext(packedResponse)
+        if let result = result {
+            observer.onNext(result)
         } else {
             observer.onError(SnatchError.spooks)
         }
