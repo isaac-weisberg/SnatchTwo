@@ -1,0 +1,2 @@
+github "isaac-weisberg/snatchBase"
+github "ReactiveX/RxSwift" ~> 4.0
