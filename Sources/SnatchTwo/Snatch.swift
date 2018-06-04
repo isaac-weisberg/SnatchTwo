@@ -9,10 +9,21 @@ import Foundation
 import RxSwift
 import SnatchBase
 
+public extension Snatch.SnatchTaskResult {
+    var asSingleEvent: SingleEvent<Result> {
+        switch self {
+        case .success(let res):
+            return.success(res)
+        case .failure(let error):
+            return .error(error)
+        }
+    }
+}
+
 public extension Snatch {
-    public func request(_ request: URLRequest) -> Observable<Result> {
-        return Observable.create { observer in
-            let task = self.task(with: request, createHandler(observer))
+    public func request(_ request: URLRequest) -> Single<Result> {
+        return Single.create { single in
+            let task = self.task(with: request, createHandler(single))
             task.resume()
             
             return Disposables.create {
@@ -22,14 +33,8 @@ public extension Snatch {
     }
 }
 
-internal func createHandler(_ observer: AnyObserver<Result>) -> Snatch.SnatchTaskCallback {
+internal func createHandler(_ single: @escaping (SingleEvent<Result>) -> Void) -> Snatch.SnatchTaskCallback {
     return { result in
-        switch result {
-        case .success(let res):
-            observer.onNext(res)
-        case .failure(let error):
-            observer.onError(error)
-        }
-        observer.onCompleted()
+        single(result.asSingleEvent)
     }
 }

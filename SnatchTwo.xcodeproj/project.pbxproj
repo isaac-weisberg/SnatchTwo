@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		A00005B920BE658900A513D5 /* Get.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00005B820BE658900A513D5 /* Get.swift */; };
-		A00005BB20BE669700A513D5 /* ErrornousObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00005BA20BE669700A513D5 /* ErrornousObservable.swift */; };
+		A00005BB20BE669700A513D5 /* ErrornousSingle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00005BA20BE669700A513D5 /* ErrornousSingle.swift */; };
 		A00005BD20BE67B400A513D5 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00005BC20BE67B400A513D5 /* Post.swift */; };
 		A00005BF20BE6B9400A513D5 /* Result+Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00005BE20BE6B9400A513D5 /* Result+Json.swift */; };
 		A00005C020BE6C8200A513D5 /* Get.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00005B820BE658900A513D5 /* Get.swift */; };
-		A00005C120BE6C8200A513D5 /* ErrornousObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00005BA20BE669700A513D5 /* ErrornousObservable.swift */; };
+		A00005C120BE6C8200A513D5 /* ErrornousSingle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00005BA20BE669700A513D5 /* ErrornousSingle.swift */; };
 		A00005C220BE6C8200A513D5 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00005BC20BE67B400A513D5 /* Post.swift */; };
 		A00005C320BE6C8200A513D5 /* Result+Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00005BE20BE6B9400A513D5 /* Result+Json.swift */; };
 		A036A5C920BE527000508F2B /* Snatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A036A5AD20BE51D500508F2B /* Snatch.swift */; };
@@ -25,7 +25,7 @@
 
 /* Begin PBXFileReference section */
 		A00005B820BE658900A513D5 /* Get.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Get.swift; sourceTree = "<group>"; };
-		A00005BA20BE669700A513D5 /* ErrornousObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrornousObservable.swift; sourceTree = "<group>"; };
+		A00005BA20BE669700A513D5 /* ErrornousSingle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrornousSingle.swift; sourceTree = "<group>"; };
 		A00005BC20BE67B400A513D5 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		A00005BE20BE6B9400A513D5 /* Result+Json.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+Json.swift"; sourceTree = "<group>"; };
 		A036A5A920BE4E4B00508F2B /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -89,7 +89,7 @@
 			children = (
 				A036A5AD20BE51D500508F2B /* Snatch.swift */,
 				A00005B820BE658900A513D5 /* Get.swift */,
-				A00005BA20BE669700A513D5 /* ErrornousObservable.swift */,
+				A00005BA20BE669700A513D5 /* ErrornousSingle.swift */,
 				A00005BC20BE67B400A513D5 /* Post.swift */,
 				A00005BE20BE6B9400A513D5 /* Result+Json.swift */,
 			);
@@ -229,7 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A00005B920BE658900A513D5 /* Get.swift in Sources */,
-				A00005BB20BE669700A513D5 /* ErrornousObservable.swift in Sources */,
+				A00005BB20BE669700A513D5 /* ErrornousSingle.swift in Sources */,
 				A036A5C920BE527000508F2B /* Snatch.swift in Sources */,
 				A00005BF20BE6B9400A513D5 /* Result+Json.swift in Sources */,
 				A00005BD20BE67B400A513D5 /* Post.swift in Sources */,
@@ -241,7 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A00005C020BE6C8200A513D5 /* Get.swift in Sources */,
-				A00005C120BE6C8200A513D5 /* ErrornousObservable.swift in Sources */,
+				A00005C120BE6C8200A513D5 /* ErrornousSingle.swift in Sources */,
 				A036A5CA20BE527100508F2B /* Snatch.swift in Sources */,
 				A00005C320BE6C8200A513D5 /* Result+Json.swift in Sources */,
 				A00005C220BE6C8200A513D5 /* Post.swift in Sources */,

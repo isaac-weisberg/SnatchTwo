@@ -10,16 +10,16 @@ import SnatchBase
 import Foundation
 
 public extension Snatch.Post {
-    public subscript<Parameters: Encodable>(url: URL, params: Parameters) -> Observable<Result> {
+    public subscript<Parameters: Encodable>(url: URL, params: Parameters) -> Single<Result> {
         return self [ url, params, nil ]
     }
     
-    public subscript<Parameters: Encodable>(url: URL, params: Parameters?, headers: [String: String]?) -> Observable<Result> {
+    public subscript<Parameters: Encodable>(url: URL, params: Parameters?, headers: [String: String]?) -> Single<Result> {
         let request: URLRequest
         do {
             request = try generate(url, params, headers)
         } catch {
-            return errornousObservable(error)
+            return errornousSingle(error)
         }
         return father.request(request)
     }
