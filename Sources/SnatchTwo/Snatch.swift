@@ -23,14 +23,12 @@ public extension Snatch {
 }
 
 internal func createHandler(_ observer: AnyObserver<Result>) -> Snatch.SnatchTaskCallback {
-    return { result, error in
-        if let error = error {
+    return { result in
+        switch result {
+        case .success(let res):
+            observer.onNext(res)
+        case .failure(let error):
             observer.onError(error)
-        }
-        if let result = result {
-            observer.onNext(result)
-        } else {
-            observer.onError(SnatchError.spooks)
         }
         observer.onCompleted()
     }
