@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import SnatchBase
+import Snatch
 import RxSwift
 
 public extension Result {

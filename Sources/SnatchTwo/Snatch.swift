@@ -7,7 +7,7 @@
 
 import Foundation
 import RxSwift
-import SnatchBase
+import Snatch
 
 public extension Snatch.SnatchTaskResult {
     var asSingleEvent: SingleEvent<Result> {

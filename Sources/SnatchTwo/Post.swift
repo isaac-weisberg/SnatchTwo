@@ -6,7 +6,7 @@
 //
 
 import RxSwift
-import SnatchBase
+import Snatch
 import Foundation
 
 public extension Snatch.Post {

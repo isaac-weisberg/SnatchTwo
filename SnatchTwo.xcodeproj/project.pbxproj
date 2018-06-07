@@ -15,12 +15,12 @@
 		A00005C120BE6C8200A513D5 /* ErrornousSingle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00005BA20BE669700A513D5 /* ErrornousSingle.swift */; };
 		A00005C220BE6C8200A513D5 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00005BC20BE67B400A513D5 /* Post.swift */; };
 		A00005C320BE6C8200A513D5 /* Result+Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00005BE20BE6B9400A513D5 /* Result+Json.swift */; };
+		A00CA47320C92E92001371E8 /* Snatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A00CA47220C92E92001371E8 /* Snatch.framework */; };
+		A00CA47520C92E98001371E8 /* Snatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A00CA47420C92E98001371E8 /* Snatch.framework */; };
 		A036A5C920BE527000508F2B /* Snatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A036A5AD20BE51D500508F2B /* Snatch.swift */; };
 		A036A5CA20BE527100508F2B /* Snatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A036A5AD20BE51D500508F2B /* Snatch.swift */; };
-		A036A5CE20BE53B800508F2B /* SnatchBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A036A5CC20BE53B800508F2B /* SnatchBase.framework */; };
 		A036A5CF20BE53B800508F2B /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A036A5CD20BE53B800508F2B /* RxSwift.framework */; };
 		A036A5D220BE53C600508F2B /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A036A5D020BE53C600508F2B /* RxSwift.framework */; };
-		A036A5D320BE53C600508F2B /* SnatchBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A036A5D120BE53C600508F2B /* SnatchBase.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +28,8 @@
 		A00005BA20BE669700A513D5 /* ErrornousSingle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrornousSingle.swift; sourceTree = "<group>"; };
 		A00005BC20BE67B400A513D5 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		A00005BE20BE6B9400A513D5 /* Result+Json.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+Json.swift"; sourceTree = "<group>"; };
+		A00CA47220C92E92001371E8 /* Snatch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Snatch.framework; path = Carthage/Build/iOS/Snatch.framework; sourceTree = "<group>"; };
+		A00CA47420C92E98001371E8 /* Snatch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Snatch.framework; path = Carthage/Build/Mac/Snatch.framework; sourceTree = "<group>"; };
 		A036A5A920BE4E4B00508F2B /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		A036A5AA20BE4E6A00508F2B /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		A036A5AD20BE51D500508F2B /* Snatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snatch.swift; sourceTree = "<group>"; };
@@ -35,10 +37,8 @@
 		A036A5B720BE51FD00508F2B /* iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = iOS.plist; sourceTree = "<group>"; };
 		A036A5C120BE521D00508F2B /* SnatchTwo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnatchTwo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A036A5C420BE521D00508F2B /* macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = macOS.plist; sourceTree = "<group>"; };
-		A036A5CC20BE53B800508F2B /* SnatchBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnatchBase.framework; path = Carthage/Build/iOS/SnatchBase.framework; sourceTree = "<group>"; };
 		A036A5CD20BE53B800508F2B /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		A036A5D020BE53C600508F2B /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/Mac/RxSwift.framework; sourceTree = "<group>"; };
-		A036A5D120BE53C600508F2B /* SnatchBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnatchBase.framework; path = Carthage/Build/Mac/SnatchBase.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,8 +46,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A036A5CE20BE53B800508F2B /* SnatchBase.framework in Frameworks */,
 				A036A5CF20BE53B800508F2B /* RxSwift.framework in Frameworks */,
+				A00CA47320C92E92001371E8 /* Snatch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,7 +56,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A036A5D220BE53C600508F2B /* RxSwift.framework in Frameworks */,
-				A036A5D320BE53C600508F2B /* SnatchBase.framework in Frameworks */,
+				A00CA47520C92E98001371E8 /* Snatch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,10 +108,10 @@
 		A036A5CB20BE53B800508F2B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A00CA47220C92E92001371E8 /* Snatch.framework */,
+				A00CA47420C92E98001371E8 /* Snatch.framework */,
 				A036A5D020BE53C600508F2B /* RxSwift.framework */,
-				A036A5D120BE53C600508F2B /* SnatchBase.framework */,
 				A036A5CD20BE53B800508F2B /* RxSwift.framework */,
-				A036A5CC20BE53B800508F2B /* SnatchBase.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

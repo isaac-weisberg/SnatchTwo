@@ -5,7 +5,7 @@
 //  Created by Isaac Weisberg on 5/30/18.
 //
 
-import SnatchBase
+import Snatch
 import RxSwift
 import Foundation
 
