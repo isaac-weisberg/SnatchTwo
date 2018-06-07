@@ -10,18 +10,17 @@ import SnatchBase
 import RxSwift
 
 public extension Result {
-    func json<Target: Decodable>(_ type: Target.Type) -> Observable<Target> {
-        return Observable.create { observer in
-            let obj: Target
+    func json<Target: Decodable>(_ type: Target.Type) -> Single<Target> {
+        return Single.create { single in
             do {
-                obj = try self.json(type)
-                observer.onNext(obj)
+                let obj: Target = try self.json(type)
+                single(.success(obj))
             } catch {
-                observer.onError(error)
+                single(.error(error))
+                
             }
-            observer.onCompleted()
+            
             return Disposables.create()
         }
     }
 }
-

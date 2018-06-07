@@ -13,7 +13,7 @@ public extension Snatch.SnatchTaskResult {
     var asSingleEvent: SingleEvent<Result> {
         switch self {
         case .success(let res):
-            return.success(res)
+            return .success(res)
         case .failure(let error):
             return .error(error)
         }
