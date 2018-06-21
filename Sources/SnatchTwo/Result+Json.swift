@@ -17,7 +17,6 @@ public extension Result {
                 single(.success(obj))
             } catch {
                 single(.error(error))
-                
             }
             
             return Disposables.create()

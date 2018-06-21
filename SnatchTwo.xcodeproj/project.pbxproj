@@ -7,13 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A00005B920BE658900A513D5 /* Get.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00005B820BE658900A513D5 /* Get.swift */; };
-		A00005BB20BE669700A513D5 /* ErrornousSingle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00005BA20BE669700A513D5 /* ErrornousSingle.swift */; };
-		A00005BD20BE67B400A513D5 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00005BC20BE67B400A513D5 /* Post.swift */; };
 		A00005BF20BE6B9400A513D5 /* Result+Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00005BE20BE6B9400A513D5 /* Result+Json.swift */; };
-		A00005C020BE6C8200A513D5 /* Get.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00005B820BE658900A513D5 /* Get.swift */; };
-		A00005C120BE6C8200A513D5 /* ErrornousSingle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00005BA20BE669700A513D5 /* ErrornousSingle.swift */; };
-		A00005C220BE6C8200A513D5 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00005BC20BE67B400A513D5 /* Post.swift */; };
 		A00005C320BE6C8200A513D5 /* Result+Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00005BE20BE6B9400A513D5 /* Result+Json.swift */; };
 		A00CA47320C92E92001371E8 /* Snatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A00CA47220C92E92001371E8 /* Snatch.framework */; };
 		A00CA47520C92E98001371E8 /* Snatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A00CA47420C92E98001371E8 /* Snatch.framework */; };
@@ -24,9 +18,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A00005B820BE658900A513D5 /* Get.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Get.swift; sourceTree = "<group>"; };
-		A00005BA20BE669700A513D5 /* ErrornousSingle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrornousSingle.swift; sourceTree = "<group>"; };
-		A00005BC20BE67B400A513D5 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		A00005BE20BE6B9400A513D5 /* Result+Json.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+Json.swift"; sourceTree = "<group>"; };
 		A00CA47220C92E92001371E8 /* Snatch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Snatch.framework; path = Carthage/Build/iOS/Snatch.framework; sourceTree = "<group>"; };
 		A00CA47420C92E98001371E8 /* Snatch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Snatch.framework; path = Carthage/Build/Mac/Snatch.framework; sourceTree = "<group>"; };
@@ -88,9 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				A036A5AD20BE51D500508F2B /* Snatch.swift */,
-				A00005B820BE658900A513D5 /* Get.swift */,
-				A00005BA20BE669700A513D5 /* ErrornousSingle.swift */,
-				A00005BC20BE67B400A513D5 /* Post.swift */,
 				A00005BE20BE6B9400A513D5 /* Result+Json.swift */,
 			);
 			path = SnatchTwo;
@@ -228,11 +216,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A00005B920BE658900A513D5 /* Get.swift in Sources */,
-				A00005BB20BE669700A513D5 /* ErrornousSingle.swift in Sources */,
 				A036A5C920BE527000508F2B /* Snatch.swift in Sources */,
 				A00005BF20BE6B9400A513D5 /* Result+Json.swift in Sources */,
-				A00005BD20BE67B400A513D5 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,11 +225,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A00005C020BE6C8200A513D5 /* Get.swift in Sources */,
-				A00005C120BE6C8200A513D5 /* ErrornousSingle.swift in Sources */,
 				A036A5CA20BE527100508F2B /* Snatch.swift in Sources */,
 				A00005C320BE6C8200A513D5 /* Result+Json.swift in Sources */,
-				A00005C220BE6C8200A513D5 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

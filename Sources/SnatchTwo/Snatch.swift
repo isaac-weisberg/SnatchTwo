@@ -31,6 +31,26 @@ public extension Snatch {
             }
         }
     }
+
+    public func post<Parameters: Encodable>(_ url: URL, _ parameters: Parameters, _ headers: [String: String]? = nil) -> Single<Result> {
+        let request: URLRequest
+        do {
+            request = try post.generate(url, parameters, headers)
+        } catch {
+            return Single.error(error)
+        }
+        return self.request(request)
+    }
+
+    public func get(_ url: URL, _ parameters: URLQueryEncoding.Parameters? = nil, _ headers: [String: String]? = nil) -> Single<Result> {
+        let request: URLRequest
+        do {
+            request = try get.generate(url, parameters, headers)
+        } catch {
+            return Single.error(error)
+        }
+        return self.request(request)
+    }
 }
 
 internal func createHandler(_ single: @escaping (SingleEvent<Result>) -> Void) -> Snatch.SnatchTaskCallback {
