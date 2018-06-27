@@ -23,7 +23,7 @@
 		A036A5A920BE4E4B00508F2B /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		A036A5AA20BE4E6A00508F2B /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		A036A5AD20BE51D500508F2B /* Snatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snatch.swift; sourceTree = "<group>"; };
-		A036A5B320BE51FD00508F2B /* SnatchTwo_iOS_Static.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnatchTwo_iOS_Static.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A036A5B320BE51FD00508F2B /* SnatchTwo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnatchTwo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A036A5B720BE51FD00508F2B /* iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = iOS.plist; sourceTree = "<group>"; };
 		A036A5C120BE521D00508F2B /* SnatchTwo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnatchTwo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A036A5C420BE521D00508F2B /* macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = macOS.plist; sourceTree = "<group>"; };
@@ -87,7 +87,7 @@
 		A036A5B420BE51FD00508F2B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A036A5B320BE51FD00508F2B /* SnatchTwo_iOS_Static.framework */,
+				A036A5B320BE51FD00508F2B /* SnatchTwo.framework */,
 				A036A5C120BE521D00508F2B /* SnatchTwo.framework */,
 			);
 			name = Products;
@@ -139,7 +139,7 @@
 			);
 			name = "SnatchTwo iOS Static";
 			productName = SnatchTwo;
-			productReference = A036A5B320BE51FD00508F2B /* SnatchTwo_iOS_Static.framework */;
+			productReference = A036A5B320BE51FD00508F2B /* SnatchTwo.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		A036A5C020BE521D00508F2B /* SnatchTwo macOS */ = {
@@ -371,7 +371,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.github.isaac-weisberg.SnatchTwo";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = SnatchTwo;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -450,7 +450,7 @@
 				MACH_O_TYPE = staticlib;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.github.isaac-weisberg.SnatchTwo";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = SnatchTwo;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
